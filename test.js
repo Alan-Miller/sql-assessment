@@ -113,9 +113,9 @@ const res = await request(app)
   .get('/api/vehicle?UserEmail=John@Smith.com')
     t.is(res.status, 200, 'Status is not 200')
     // t.is(res.body.length >=3 , 'Expected at least 3 cars for John@Smith.com')
-    t.truthy(res.body[0].email, 'Expected to see an email propety')
-    t.truthy(res.body[0].make, 'Expected to see a make propety')
-    t.truthy(res.body[0].model, 'Expected to see a model propety')
+    t.truthy(res.body[0].email, 'Expected to see an email property')
+    t.truthy(res.body[0].make, 'Expected to see a make property')
+    t.truthy(res.body[0].model, 'Expected to see a model property')
     var checkEmail = res.body.reduce(function(prev, cur){
       if (!prev) return prev;
       return cur.email = "John@Smith.com"
