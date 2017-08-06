@@ -148,8 +148,8 @@ app.delete('/api/user/:userId/vehicle/:vehicleId', function(req, res) {
 
 
 
-app.listen('3000', function(){
-  console.log("Successfully listening on : 3000")
+app.listen('3100', function(){
+  console.log("Successfully listening on : 3100")
 })
 
 module.exports = app;
